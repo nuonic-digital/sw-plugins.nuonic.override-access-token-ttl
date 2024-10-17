@@ -1,0 +1,38 @@
+{
+    "name": "nuonic/override-access-token-ttl",
+    "description": "Override Access Token TTL",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "extra": {
+        "shopware-plugin-class": "NuonicOverrideAccessTokenTtl\\NuonicOverrideAccessTokenTtlPlugin",
+        "author": "nuonic Digital GmbH & Co. KG",
+        "description": {
+            "de-DE": "",
+            "en-GB": ""
+        },
+        "manufacturerLink": {
+            "de-DE": "",
+            "en-GB": ""
+        },
+        "supportLink": {
+            "de-DE": "",
+            "en-GB": ""
+        },
+        "label": {
+            "de-DE": "Override Access Token TTL",
+            "en-GB": "Override Access Token TTL"
+        }
+    },
+    "require": {
+        "php": ">= 8.2",
+        "shopware/core": ">=6.5.0"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^0.12.18"
+    },
+    "autoload": {
+        "psr-4": {
+            "NuonicOverrideAccessTokenTtl\\": "src/"
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/shopware/master/src/Core/System/SystemConfig/Schema/config.xsd">
+    <card>
+        <title>Override Access Token TTL Settings</title>
+        <title lang="de-DE">Override Access Token TTL Einstellungen</title>
+
+        <input-field type="int">
+            <name>accessTokenTtl</name>
+            <label>Access-Token TTL (minutes)</label>
+            <label lang="de-DE">Access-Token TTL (Minuten)</label>
+        </input-field>
+    </card>
+</config>

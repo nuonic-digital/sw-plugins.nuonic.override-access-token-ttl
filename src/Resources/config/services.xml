@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+    <services>
+        <service id="NuonicOverrideAccessTokenTtl\Config\PluginConfigService" class="NuonicOverrideAccessTokenTtl\Config\PluginConfigService">
+            <argument type="service" id="Shopware\Core\System\SystemConfig\SystemConfigService" />
+            <argument key="$configDomain">NuonicOverrideAccessTokenTtlPlugin.config</argument>
+        </service>
+
+        <service id="NuonicOverrideAccessTokenTtl\EventListener\Authentication\ApiAuthenticationListener" class="NuonicOverrideAccessTokenTtl\EventListener\Authentication\ApiAuthenticationListener">
+            <argument type="service" id="shopware.api.authorization_server" />
+            <argument type="service" id="NuonicOverrideAccessTokenTtl\Config\PluginConfigService" />
+            <tag name="kernel.event_listener"/>
+        </service>
+    </services>
+</container>
